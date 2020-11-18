@@ -6,9 +6,9 @@ driver = webdriver.Chrome('/usr/bin/chromedriver')
 
 driver.get("https://dailyhoroscopee.com/admin/")
 username = driver.find_element_by_id("id_username")
-username.send_keys("root")
+username.send_keys("user")
 username = driver.find_element_by_id("id_password")
-username.send_keys("root")
+username.send_keys("pass")
 driver.find_element_by_xpath('//*[@id="login-form"]/div[3]').click()
 
 
